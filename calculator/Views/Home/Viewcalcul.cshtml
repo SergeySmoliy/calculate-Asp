@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+<form name="form1" method="post">
+    <div>
+
+        <input type="text" name="a" value="@ViewBag.A" />
+        <select id="Metods" name="param">
+            <option value="-" @(ViewBag.Param == "-" ? "selected" : "")>-</option>
+            <option value="+" @(ViewBag.Param == "+" ? "selected" : "")>+</option>
+            <option value="/" @(ViewBag.Param == "/" ? "selected" : "")>/</option>
+            <option value="*" @(ViewBag.Param == "*" ? "selected" : "")>*</option>
+
+        </select>
+
+        <input type="text" name="b" value="@ViewBag.B" />
+        <a>=</a>
+        <input type="text" value="@ViewBag.Sum" />
+
+        <input type="submit" value="сalculate" />
+
+
+
+    </div>
+
+
+
+
+</form>
